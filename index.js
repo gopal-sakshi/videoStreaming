@@ -49,7 +49,7 @@ app.get('/videos/:videoId', (req, res) => {
 function fetchVideo(videoId, range) {
     // videoPath & videoSize
     var videoExtension = getVideoExtension();
-    const videoPath = `/resources/${videoId}.${videoExtension}`;
+    const videoPath = `/resources2/${videoId}.${videoExtension}`;
     const videoSize = fs.statSync(__dirname+`${videoPath}`).size;
     console.log(videoPath);
     console.log(videoSize);
